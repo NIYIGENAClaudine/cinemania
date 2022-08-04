@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            .navig{
+                background-color:darkblue;
+                align-items: right;
+                font-size: 2rem;
+              
+                height: fit-content;
+               
+              
+               padding: 20px;
+            }
+         
+       
+            body{
+                background-image: url('img/logo.jpg');
+                background-repeat: no-repeat;
+                background-size: 150%;
+                /*mask-image: linear-gradient(270deg, rgba(83, 120, 200, 0.9),rgba(20, 246, 248, 0.65));
+                -webkit-mask-image: linear-gradient(90deg, rgba(12, 40, 40, 0.5),rgba(50, 54, 40, 0.6) );*/
+               position: relative;
+              /* background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));*/
+               
+            }
+            a{
+                margin-left: 30px;
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+            
+            }
+            /* li { width:100px; float:center; }
+             
+             li:hover > ul { display:inline; }
+             li > ul { padding-left:10px; }*/
+            .mySlides{
+              margin-top: 50px; 
+              margin-bottom: 10px;
+              height: 100%; 
+
+            }
+            
+ form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: black;
+  font-size: 17px;
+  border: 1px solid rgb(154, 56, 56);
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #09e609;
+}
+
+form.example::after {
+  content: icon;
+  clear: both;
+  display: table;
+}
+        </style>
+    </head>
+    <body>
+        
+        <div class="navig">
+          <img class="logo-img" src="img/logo1.jpg" style="width:7%; height: 6%;">
+            
+            
+          <a href="home.html">Home</a>
+          <a href="signup.html">Signup</a>
+          <a href="login.html">Login</a>
+          <a href="fav-movies.html">Favorite Movies</a>
+         <a href="movieform.html">Click Here To Add your favorite movie</a>
+                   
+        </div>
+        <center>
+          <h1 class="heading">CINEMANIA</h1>
+          <div class="search">
+            <form class="example" action="" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"> <!--i class="fa fa-search"></i--></button>
+              </form>
+            </div>
+          <p class="paragraphy">Cinemania is a community of Cinema enthusiasts. </p>
+
+    <div class="w3-content w3-section" style="max-width:500px">
+       
+        <img class="mySlides" src="img/image6.jpg" style="width:60%; height:30%">
+        <img class="mySlides" src="img/image7.jpg" style="width:60%; height: 30%;">
+        <img class="mySlides" src="img/image8.jpg" style="width:60%; height: 30%;">
+        <img class="mySlides" src="img/logo2.jpg" style="width:60%; height: 30%;">
+        <img class="mySlides" src="img/logo3.jpg" style="width:60%; height: 30%;">
+    
+      </div>
+      
+    </center>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+      }
+      </script>
+
+
+
+
+    </body>
+   
+</html>

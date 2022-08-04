@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+<title> Sign Up</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <div>
+
+        <div class="navig">
+          <div class="navig">
+            <img class="logo-img" src="img/logo1.jpg" style="width:7%; height: 6%;">
+              
+              
+                      <a href="home.html">Home</a>
+                      <a href="signup.html">Signup</a>
+                      <a href="login.html">Login</a>
+                      <a href="fav-movies.html">Favorite Movies</a>
+                     <a href="movieform.html">Click Here To Add your favorite movie</a>
+                    
+                    </div>
+      </div>
+    
+<div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+		<h2>Sign Up</h2>
+		<p class="hint-text">Create your account</p>
+        <div class="form-group">
+			<div class="row">
+				<input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"><br><br>
+				<input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"><br>
+			</div> 
+            <div class="gender">
+             Female: <input type="radio" name="radio"> <br> 
+             Male: <input type="radio" name="radio"><br>
+             Other: <input type="radio" name="radio"> <br>
+             Age: <input type="text" name="text">
+             </div>
+            <div class="profile-image"> <br>
+            Profile Image: <input type="file" name="file"><br><br>
+            Registration Date: <input type="date" name="date"><br><br>
+
+        </div>
+        <div class="form-group">
+        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+        </div>        
+        <div class="form-group">
+			<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+		</div>
+		<div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Sign Up</button>
+        </div>
+    </form>
+	<div class="text-center">Already have an account? <a href="login.html">Log In</a></div>
+</div>
+</body>
+</html>

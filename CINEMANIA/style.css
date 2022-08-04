@@ -1,0 +1,52 @@
+fieldset{
+   
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 40px;
+  border-radius: 40px;
+ background-color: rgb(161, 188, 210);
+
+}
+legend{
+   text-align: center;
+   padding: 5px;
+   background-color: black;
+   color: white;
+   border-radius: 10px;
+}
+a{
+    display: inline;
+    margin-left: 50px;
+   
+    
+    
+}
+button{
+   border-radius: 5px;
+   margin: auto;
+}
+button{
+   border-radius: 30px;
+   margin-left: 50px;
+}
+.navig{
+   background-color:rgb(60, 60, 151);
+   align-items: right;
+   font-size: 2rem;
+ 
+   height: fit-content;
+  
+ 
+  padding: 20px;
+}
+a{
+   margin-left: 30px;
+   color: white;
+   text-decoration: none;
+}
+body{
+
+      background-image: url('img/logo.jpg');
+      background-repeat: no-repeat;
+      background-size: 200%;
+}
